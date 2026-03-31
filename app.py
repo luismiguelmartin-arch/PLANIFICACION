@@ -69,8 +69,3 @@ with tab2:
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("No hay datos para mostrar el gráfico.")
-            st.warning("No hay columnas numéricas para graficar.")
-
-except Exception as e:
-    st.error(f"Error al cargar el archivo: {e}")
-    st.info("Asegúrate de que el archivo Excel esté en la raíz del repositorio.")
